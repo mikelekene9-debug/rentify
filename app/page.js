@@ -1,6 +1,10 @@
-
+import image from "next/image";
 export default function Home() {
   return (
-       <main className="text-blue-500 text">This is our Landing page</main>
+       <main>
+        <div className="bg-[url(/homes5.webp)] h-[150vh] bg-contain bg-no-repeat"></div>
+
+
+       </main>
   );
 }
