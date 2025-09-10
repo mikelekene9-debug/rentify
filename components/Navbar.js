@@ -17,11 +17,11 @@ return (
             <ul className="hidden md:flex gap-10 font-semibold cursor-pointer">
                 <Link href="/"><li>home</li></Link>
                 <Link href="/dashboard/tenant-form"><li>Add-Rent</li></Link>
-                <li>Rent-List</li>
+                <Link href="/dashboard/rent-list"><li>Rent-List</li></Link>
             </ul>
             <div className="flex gap-3">
-                <p className="w-[60px]">Login</p>
-                <p><CgProfile /></p>
+                <Link href="/auth/login"><p className="w-[60px]">Login</p></Link>
+                <Link href="/dashboard/profile"><p><CgProfile /></p></Link>
             </div>
             <div className="block md:hidden">
                 <RxHamburgerMenu onClick={toggleDropDown} className="text-blue-500 text-3xl"/>
