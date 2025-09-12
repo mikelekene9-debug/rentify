@@ -1,13 +1,13 @@
 import { auth } from "@/auth";
 import { AuthorizationCheck } from "@/config/authorization-check";
-import TenantForm from "./tenant-form";
+import RentList from "./rent-list";
 
 export default async function Page() {
     const session = await auth();
    return (
     <>
     <AuthorizationCheck />
-    <TenantForm userId = {session?.user?.id} />
+    <RentList userId = {session?.user?.id} />
     </>
    )
 }
