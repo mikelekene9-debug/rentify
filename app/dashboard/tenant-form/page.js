@@ -7,7 +7,7 @@ export default async function Page() {
     const session = await auth();
    return (
     <>
-    <authorizationCheck />
+    <AuthorizationCheck />
     <TenantForm userId = {session?.user?.id} />
     </>
    )
